@@ -7,7 +7,7 @@ Group:		Internet
 URL:		http://www.xapian.org
 Source0:	http://www.oligarchy.co.uk/xapian/%{version}/%{name}-%{version}.tar.bz2
 BuildRequires:	xapian-devel
-BuildRequires:	xapian
+Requires:	xapian
 Buildroot:	%{_tmppath}/%{name}-%{version}-root
 
 %description
@@ -44,9 +44,6 @@ cp -r templates/* %{buildroot}%{_var}/lib/omega/templates/
 mkdir -p %{buildroot}%{_var}/www/icons/omega
 cp -r images/* %{buildroot}%{_var}/www/icons/omega/
 
-# Move the scripts to the right place
-#mv %{buildroot}/usr/share/omega %{buildroot}%{_datadir}/%{name}
-
 %clean
 [ "%{buildroot}" != "/" ] && rm -rf %{buildroot}
 
@@ -55,9 +52,8 @@ cp -r images/* %{buildroot}%{_var}/www/icons/omega/
 %doc %{_docdir}/%{name}
 %doc AUTHORS ChangeLog COPYING README TODO NEWS
 %dir %{_datadir}/omega
-%dir %{_var}/www/cgi-bin/omega
 %dir %{_var}/www/icons/omega
-#%dir %{contentdir}/templates
+%dir %{_var}/lib/omega
 %{_bindir}/dbi2omega
 %{_bindir}/omindex
 %{_bindir}/scriptindex
