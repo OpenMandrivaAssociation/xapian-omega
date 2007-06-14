@@ -49,7 +49,6 @@ cp -r images/* %{buildroot}%{_var}/www/icons/omega/
 
 %files
 %defattr(-,root,root)
-%doc %{_docdir}/%{name}
 %doc AUTHORS ChangeLog COPYING README TODO NEWS
 %dir %{_datadir}/omega
 %dir %{_var}/www/icons/omega
