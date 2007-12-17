@@ -8,7 +8,6 @@ URL:		http://www.xapian.org
 Source0:	http://www.oligarchy.co.uk/xapian/%{version}/%{name}-%{version}.tar.gz
 BuildRequires:	xapian-devel
 Requires:	xapian
-Buildroot:	%{_tmppath}/%{name}-%{version}-root
 
 %description
 Omega is a CGI application which uses the Xapian Information Retrieval
