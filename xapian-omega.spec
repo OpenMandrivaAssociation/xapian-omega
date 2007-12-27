@@ -6,8 +6,8 @@ License:	GPLv2+
 Group:		Networking/WWW
 URL:		http://www.xapian.org
 Source0:	http://www.oligarchy.co.uk/xapian/%{version}/%{name}-%{version}.tar.bz2
-BuildRequires:	xapian-devel
-Requires:	xapian-core
+BuildRequires:	xapian-devel >= %{version}
+Requires:	xapian-core >= %{version}
 
 %description
 Omega is a CGI application which uses the Xapian Information Retrieval
