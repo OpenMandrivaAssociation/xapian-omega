@@ -1,14 +1,14 @@
 Summary:	A CGI search frontend and indexers built on Xapian
 Name:		xapian-omega
-Version:	1.0.5
+Version:	1.0.6
 Release:	%mkrel 1
 License:	GPLv2+
 Group:		Networking/WWW
-BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 URL:		http://www.xapian.org
 Source0:	http://www.oligarchy.co.uk/xapian/%{version}/%{name}-%{version}.tar.bz2
 BuildRequires:	xapian-devel >= %{version}
 Requires:	xapian-core >= %{version}
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 Omega is a CGI application which uses the Xapian Information Retrieval
@@ -49,7 +49,7 @@ cp -r images/* %{buildroot}%{_var}/www/icons/omega/
 
 %files
 %defattr(-,root,root)
-%doc AUTHORS ChangeLog COPYING README TODO NEWS
+%doc AUTHORS ChangeLog README TODO NEWS
 %dir %{_datadir}/omega
 %dir %{_var}/www/icons/omega
 %dir %{_var}/lib/omega
