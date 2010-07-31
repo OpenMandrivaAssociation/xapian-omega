@@ -7,6 +7,7 @@ Group:		Networking/WWW
 URL:		http://www.xapian.org
 Source0:	http://www.oligarchy.co.uk/xapian/%{version}/%{name}-%{version}.tar.bz2
 BuildRequires:	xapian-devel >= %{version}
+BuildRequires:	pcre-devel
 Requires:	xapian-core >= %{version}
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
