@@ -1,6 +1,6 @@
 Summary:	A CGI search frontend and indexers built on Xapian
 Name:		xapian-omega
-Version:	1.2.3
+Version:	1.2.5
 Release:	%mkrel 1
 License:	GPLv2+
 Group:		Networking/WWW
@@ -59,6 +59,7 @@ cp -r images/* %{buildroot}%{_var}/www/icons/omega/
 %{_bindir}/scriptindex
 %{_bindir}/htdig2omega
 %{_bindir}/mbox2omega
+%{_libdir}/xapian-omega/bin/outlookmsg2html
 %{_var}/lib/omega/templates/*
 %{_var}/log/omega
 %{_var}/www/cgi-bin/omega
