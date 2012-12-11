@@ -1,15 +1,14 @@
 Summary:	A CGI search frontend and indexers built on Xapian
 Name:		xapian-omega
-Version:	1.2.5
-Release:	%mkrel 2
+Version:	1.2.12
+Release:	1
 License:	GPLv2+
 Group:		Networking/WWW
 URL:		http://www.xapian.org
-Source0:	http://www.oligarchy.co.uk/xapian/%{version}/%{name}-%{version}.tar.bz2
+Source0:	http://www.oligarchy.co.uk/xapian/%{version}/%{name}-%{version}.tar.xz
 BuildRequires:	xapian-devel >= %{version}
 BuildRequires:	pcre-devel
 Requires:	xapian-core >= %{version}
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 Omega is a CGI application which uses the Xapian Information Retrieval
@@ -20,12 +19,9 @@ library to index and search collections of documents.
 
 %build
 %configure2_5x
-
 %make
 
 %install
-[ "%{buildroot}" != "/" ] && rm -rf %{buildroot}
-
 %makeinstall_std
 
 # CGI application
@@ -45,11 +41,7 @@ cp -r templates/* %{buildroot}%{_var}/lib/omega/templates/
 mkdir -p %{buildroot}%{_var}/www/icons/omega
 cp -r images/* %{buildroot}%{_var}/www/icons/omega/
 
-%clean
-[ "%{buildroot}" != "/" ] && rm -rf %{buildroot}
-
 %files
-%defattr(-,root,root)
 %doc AUTHORS ChangeLog README TODO NEWS
 %dir %{_datadir}/omega
 %dir %{_var}/www/icons/omega
@@ -68,3 +60,4 @@ cp -r images/* %{buildroot}%{_var}/www/icons/omega/
 %config(noreplace) %{_sysconfdir}/omega.conf
 %{_mandir}/man1/omindex.1*
 %{_mandir}/man1/scriptindex.1*
+
