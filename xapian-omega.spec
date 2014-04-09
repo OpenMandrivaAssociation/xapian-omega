@@ -1,6 +1,6 @@
 Summary:	A CGI search frontend and indexers built on Xapian
 Name:		xapian-omega
-Version:	1.2.12
+Version:	1.2.17
 Release:	1
 License:	GPLv2+
 Group:		Networking/WWW
