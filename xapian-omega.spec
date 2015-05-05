@@ -1,7 +1,7 @@
 Summary:	A CGI search frontend and indexers built on Xapian
 Name:		xapian-omega
-Version:	1.2.17
-Release:	2
+Version:	1.2.20
+Release:	1
 License:	GPLv2+
 Group:		Networking/WWW
 URL:		http://www.xapian.org
@@ -18,7 +18,7 @@ library to index and search collections of documents.
 %setup -q
 
 %build
-%configure2_5x
+%configure
 %make
 
 %install
