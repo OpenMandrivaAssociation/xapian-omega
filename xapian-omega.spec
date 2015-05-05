@@ -60,4 +60,4 @@ cp -r images/* %{buildroot}%{_var}/www/icons/omega/
 %config(noreplace) %{_sysconfdir}/omega.conf
 %{_mandir}/man1/omindex.1*
 %{_mandir}/man1/scriptindex.1*
-
+%{_var}/lib/omega/templates
