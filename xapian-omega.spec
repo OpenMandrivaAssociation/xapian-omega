@@ -46,6 +46,7 @@ cp -r images/* %{buildroot}%{_var}/www/icons/omega/
 %dir %{_datadir}/omega
 %dir %{_var}/www/icons/omega
 %dir %{_var}/lib/omega
+%dir %{_var}/lib/omega/templates
 %{_bindir}/dbi2omega
 %{_bindir}/omindex
 %{_bindir}/scriptindex
@@ -60,4 +61,4 @@ cp -r images/* %{buildroot}%{_var}/www/icons/omega/
 %config(noreplace) %{_sysconfdir}/omega.conf
 %{_mandir}/man1/omindex.1*
 %{_mandir}/man1/scriptindex.1*
-%{_var}/lib/omega/templates
+
