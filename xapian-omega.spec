@@ -1,6 +1,6 @@
 Summary:	A CGI search frontend and indexers built on Xapian
 Name:		xapian-omega
-Version:	1.2.20
+Version:	1.2.22
 Release:	1
 License:	GPLv2+
 Group:		Networking/WWW
@@ -61,4 +61,3 @@ cp -r images/* %{buildroot}%{_var}/www/icons/omega/
 %config(noreplace) %{_sysconfdir}/omega.conf
 %{_mandir}/man1/omindex.1*
 %{_mandir}/man1/scriptindex.1*
-
