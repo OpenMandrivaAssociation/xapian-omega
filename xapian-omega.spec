@@ -4,7 +4,7 @@ Version:	1.2.22
 Release:	1
 License:	GPLv2+
 Group:		Networking/WWW
-URL:		http://www.xapian.org
+URL:		https://www.xapian.org
 Source0:	http://www.oligarchy.co.uk/xapian/%{version}/%{name}-%{version}.tar.xz
 BuildRequires:	xapian-devel >= %{version}
 BuildRequires:	pcre-devel
